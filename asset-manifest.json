@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/flowers-nikocity/static/css/main.aca17e72.css",
-    "main.js": "/flowers-nikocity/static/js/main.283374cd.js",
+    "main.js": "/flowers-nikocity/static/js/main.414a9961.js",
     "static/media/fa-solid-900.ttf": "/flowers-nikocity/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
     "static/media/fa-brands-400.ttf": "/flowers-nikocity/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
     "static/media/fa-solid-900.woff2": "/flowers-nikocity/static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
@@ -27,10 +27,10 @@
     "index.html": "/flowers-nikocity/index.html",
     "static/media/menu-icon.svg": "/flowers-nikocity/static/media/menu-icon.c9917370f41163fe036b.svg",
     "main.aca17e72.css.map": "/flowers-nikocity/static/css/main.aca17e72.css.map",
-    "main.283374cd.js.map": "/flowers-nikocity/static/js/main.283374cd.js.map"
+    "main.414a9961.js.map": "/flowers-nikocity/static/js/main.414a9961.js.map"
   },
   "entrypoints": [
     "static/css/main.aca17e72.css",
-    "static/js/main.283374cd.js"
+    "static/js/main.414a9961.js"
   ]
 }
