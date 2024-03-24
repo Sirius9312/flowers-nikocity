@@ -29,7 +29,7 @@ export const HomePage = () => {
         <div className="flower-menu__content">
           <div className="flower-menu__image-text-container">
             <h1 className="flower-menu__homeimage-title">
-              Ласкаво просимо1
+              Ласкаво просимо2
             </h1>
 
             <div className="grid-cover">
