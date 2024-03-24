@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/flowers-nikocity/static/css/main.aca17e72.css",
+    "main.js": "/flowers-nikocity/static/js/main.be6f7ef6.js",
+    "static/media/fa-solid-900.ttf": "/flowers-nikocity/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
+    "static/media/fa-brands-400.ttf": "/flowers-nikocity/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
+    "static/media/fa-solid-900.woff2": "/flowers-nikocity/static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
+    "static/media/fa-brands-400.woff2": "/flowers-nikocity/static/media/fa-brands-400.878f31251d960bd6266f.woff2",
+    "static/media/fa-regular-400.ttf": "/flowers-nikocity/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
+    "static/media/fa-regular-400.woff2": "/flowers-nikocity/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
+    "static/media/fa-v4compatibility.ttf": "/flowers-nikocity/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
+    "static/media/fa-v4compatibility.woff2": "/flowers-nikocity/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
+    "static/media/CartIcon.svg": "/flowers-nikocity/static/media/CartIcon.89133a0a9c316350dc18.svg",
+    "static/media/FavouritesIcon.svg": "/flowers-nikocity/static/media/FavouritesIcon.e304ade2dd035c625345.svg",
+    "static/media/FavouritesActiveIcon.svg": "/flowers-nikocity/static/media/FavouritesActiveIcon.0adbb61bbc593d135bdb.svg",
+    "static/media/search-glass.svg": "/flowers-nikocity/static/media/search-glass.1e77bbf11368a75dc2b8.svg",
+    "static/media/active-cross.svg": "/flowers-nikocity/static/media/active-cross.c0b1179e5233462d1ff3.svg",
+    "static/media/cross-no-hover.svg": "/flowers-nikocity/static/media/cross-no-hover.0be1ed2ae77775e4e630.svg",
+    "static/media/plus.svg": "/flowers-nikocity/static/media/plus.60b4bc00b53298abd3e7.svg",
+    "static/media/arrow-right-disabled.svg": "/flowers-nikocity/static/media/arrow-right-disabled.a374b573155c92815583.svg",
+    "static/media/arrow-left-disabled.svg": "/flowers-nikocity/static/media/arrow-left-disabled.91a03a1d1e7f575d87e5.svg",
+    "static/media/header-arrow-right.svg": "/flowers-nikocity/static/media/header-arrow-right.079e7aa27a8a11c3c826.svg",
+    "static/media/arrow-down.svg": "/flowers-nikocity/static/media/arrow-down.6a1c94bb9d6a68d1a098.svg",
+    "static/media/header-arrow-left.svg": "/flowers-nikocity/static/media/header-arrow-left.7e79118d62a86cb16ed5.svg",
+    "static/media/select-arrow-up.svg": "/flowers-nikocity/static/media/select-arrow-up.bca5376b1db38a7323e9.svg",
+    "static/media/minus.svg": "/flowers-nikocity/static/media/minus.bdf110d3a1bd224c8a82.svg",
+    "index.html": "/flowers-nikocity/index.html",
+    "static/media/menu-icon.svg": "/flowers-nikocity/static/media/menu-icon.c9917370f41163fe036b.svg",
+    "main.aca17e72.css.map": "/flowers-nikocity/static/css/main.aca17e72.css.map",
+    "main.be6f7ef6.js.map": "/flowers-nikocity/static/js/main.be6f7ef6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aca17e72.css",
+    "static/js/main.be6f7ef6.js"
+  ]
+}
