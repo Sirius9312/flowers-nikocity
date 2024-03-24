@@ -18,7 +18,7 @@ export const SelectedFlowerPage = () => {
 
       $.ajax({
         type: "POST",
-        url: "https://www.flowers-nikocity.ho.ua/api/flowers/flower.php",
+        url: "http://www.flowers-nikocity.ho.ua/api/flowers/flower.php",
         data: {flowerId: flowerId},
         success: function (data){
           setSelectFlower(JSON.parse(data))

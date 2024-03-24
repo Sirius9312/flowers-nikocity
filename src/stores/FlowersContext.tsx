@@ -92,7 +92,7 @@ export const FlowersProvider: React.FC<Props> = ({ children }) => {
     setNotProductMessage('');
     setLoader(true);
 
-    $.get("https://www.flowers-nikocity.ho.ua/api/flowers.php")
+    $.get("http://www.flowers-nikocity.ho.ua/api/flowers.php")
       .then((resp) => {
         const parsingFlowers: Flower[] = JSON.parse(resp);
         const chrysantemsList = parsingFlowers.filter(flower => flower.category === 'Голова');
@@ -113,7 +113,7 @@ export const FlowersProvider: React.FC<Props> = ({ children }) => {
     setNotProductMessage('');
     setLoader(true);
 
-    $.get("https://www.flowers-nikocity.ho.ua/api/flowers.php")
+    $.get("http://www.flowers-nikocity.ho.ua/api/flowers.php")
       .then((resp) => {
         const parsingFlowers: Flower[] = JSON.parse(resp);
         const chrysantemsList = parsingFlowers.filter(flower => flower.flower === 'Хризантема' && flower.category === 'Дрібноквітка');
@@ -134,7 +134,7 @@ export const FlowersProvider: React.FC<Props> = ({ children }) => {
     setNotProductMessage('');
     setLoader(true);
 
-    $.get("https://www.flowers-nikocity.ho.ua/api/flowers.php")
+    $.get("http://www.flowers-nikocity.ho.ua/api/flowers.php")
       .then((resp) => {
         const parsingFlowers: Flower[] = JSON.parse(resp);
         const chrysantemsList = parsingFlowers.filter(flower => flower.category === 'Мультифлора');
@@ -155,7 +155,7 @@ export const FlowersProvider: React.FC<Props> = ({ children }) => {
     setNotProductMessage('');
     setLoader(true);
 
-    $.get("https://www.flowers-nikocity.ho.ua/api/flowers.php")
+    $.get("http://www.flowers-nikocity.ho.ua/api/flowers.php")
       .then((resp) => {
         const parsingFlowers: Flower[] = JSON.parse(resp);
         const alstromeriaList = parsingFlowers.filter(flower => flower.flower === 'Альстромерія');
@@ -209,7 +209,7 @@ export const FlowersProvider: React.FC<Props> = ({ children }) => {
 
     $.ajax({
       type: "POST",
-      url: "https://www.flowers-nikocity.ho.ua",
+      url: "http://www.flowers-nikocity.ho.ua",
       data: d,
       success: function (data){
         alert(data);
