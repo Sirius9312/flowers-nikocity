@@ -1,0 +1,80 @@
+@import "../../styles/vars/vars.scss";
+@import "../../styles/mixins/mixins.scss";
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+
+  &__list-pages {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__button {
+    background-color: $white;
+    border: none;
+
+    @include on640 {
+      border: 1px solid $black;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    &--left-disabled {
+      cursor: auto;
+    }
+
+    &--right-disabled {
+      cursor: auto;
+    }
+  }
+
+  &__item {
+    margin-right: 20px;
+    
+    @include on640 {
+      margin-right: 10px;
+    }
+
+    &:first-child {
+      margin-right: 30px;
+
+      @include on640 {
+        margin-right: 25px;
+      }
+    }
+
+    &:last-child {
+      margin: 0 0 0 10px;
+
+      @include on640 {
+        margin: 0 0 0 15px;
+      }
+    }
+  }
+
+  &__page-link {
+    text-decoration: none;
+    color: $darkgreen;
+    font-size: 18px;
+
+    @include on640 {
+      border: 1px solid $darkgreen;
+      padding: 8px 15px;
+      font-size: 16px;
+    }
+
+    &--active {
+      color: $red;
+
+      @include on640 {
+        background-color: $darkgreen;
+        color: $white;
+      }
+    }
+  }
+}

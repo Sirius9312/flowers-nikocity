@@ -1,0 +1,24 @@
+.flex-container {
+  margin: 0 auto 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+
+  @include on640 {
+    column-gap: 16px;
+    width: 580px;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  @include on1000 {
+    width: 870px;
+  }
+
+  @include on1280 {
+    width: 1160px;
+  }
+}

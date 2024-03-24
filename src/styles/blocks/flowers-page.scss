@@ -1,0 +1,19 @@
+.flowers-page {
+  &__title {
+    margin: 0 0 15px;
+  }
+
+  &__count-sorts {
+    margin: 0 0 50px;
+    color: $gray777;
+    font-size: 11px;
+
+    @include on640 {
+      font-size: 13px;
+    }
+
+    @include on1280 {
+      font-size: 15px;
+    }
+  }
+}

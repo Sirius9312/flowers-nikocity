@@ -1,0 +1,7 @@
+.container {
+  padding: 0 30px;
+
+  @include on640 {
+    padding: 0 70px;
+  }
+}

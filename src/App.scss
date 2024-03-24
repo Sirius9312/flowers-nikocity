@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+@import "./styles/vars/vars.scss";
+@import "./styles/mixins/mixins.scss";
+@import "./styles/blocks/container.scss";
+@import "./styles/blocks/flex-app.scss";
+@import "./styles/blocks/grid-cover.scss";
+@import "./styles/blocks/logo.scss";
+@import "./styles/blocks/icon.scss";
+@import "./styles/blocks/flower-menu.scss";
+@import "./styles/blocks/flowers-page.scss";
+@import "./styles/blocks/flex-container.scss";
+@import "./styles/blocks/favourites-page.scss";
+@import "./styles/blocks/contacts.scss";
+@import "./styles/blocks/cart-page.scss";
+@import "./styles/blocks/form-field.scss";
+@import "./styles/blocks/all-info-page.scss";
+
+iframe {
+  display: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Sora, Arial, Helvetica, sans-serif;
+  color: $gray333;
+
+  @include lessOn320 {
+    min-width: 319px;
+  }
+}
+
+.App {
+  &__header {
+    margin-bottom: 80px;
+  }
+
+  &__flower-menu {
+    margin-bottom: 40px;
+
+    @include on640 {
+      margin-bottom: 60px;
+    }
+
+    @include on1280 {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.3s;
+    z-index: 1;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 27px;
+    letter-spacing: 0.05em;
+    color: $green;
+
+    @include on640 {
+      font-size: 35px;
+      letter-spacing: 0.08em;
+    }
+
+    @include on1280 {
+      font-size: 50px;
+      letter-spacing: 0.12em;
+    }
+  }
+}

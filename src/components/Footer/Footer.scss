@@ -1,0 +1,65 @@
+@import "../../styles/vars/vars.scss";
+@import "../../styles/mixins/mixins.scss";
+
+.footer {
+  border-top: 1px solid $gray888;
+
+  &__content {
+    display: flex;
+    padding: 25px 0;
+    justify-content: center;
+
+    @include on1280 {
+      justify-content: space-between;
+    }
+  }
+
+  &__copy {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  &__menu {
+    display: none;
+
+    @include on1280 {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__menu-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+  }
+
+  &__menu-item {
+    margin-right: 25px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__menu-link {
+    text-decoration: none;
+    color: $gray777;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+
+    &:hover {
+      text-shadow: 4px 8px 6px rgba(0,0,0,0.6);
+      color: $gray444;
+    }
+
+    &--is-active {
+      text-shadow: 4px 8px 6px rgba(0,0,0,0.6);
+      color: $gray444;
+    }
+  }
+}

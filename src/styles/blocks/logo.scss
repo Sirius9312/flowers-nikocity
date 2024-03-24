@@ -1,0 +1,10 @@
+.logo {
+  &__logo-image {
+    padding-left: 10px;
+    height: 25px;
+
+    @include on640 {
+      height: 35px;
+    }
+  }
+}

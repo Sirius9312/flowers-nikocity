@@ -1,0 +1,88 @@
+@import "../../styles/vars/vars.scss";
+@import "../../styles/mixins/mixins.scss";
+
+.burger-menu {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: $white;
+
+  @include on1280 {
+    display: none;
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    align-items: center;
+    border-bottom: 1px solid $gray999;
+    margin-bottom: 50px;
+  }
+
+  &__close-menu-button {
+    background-color: $white;
+    border: none;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    column-gap: 5px;
+    justify-content: center;
+    align-items: center;
+
+    @include on640 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__menu-link {
+    text-decoration: none;
+    color: $gray777;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+
+    @include on640 {
+      font-size: 15px;
+    }
+
+    &:hover {
+      text-shadow: 4px 8px 6px rgba(0,0,0,0.6);
+      color: $gray444;
+    }
+
+    &--is-active {
+      text-shadow: 4px 8px 6px rgba(0,0,0,0.6);
+      color: $gray444;
+    }
+  }
+
+  &__count {
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    background-color: $orange;
+
+    &--cart {
+      position: relative;
+      right: 17px;
+      bottom: 10px;
+    }
+  }
+}

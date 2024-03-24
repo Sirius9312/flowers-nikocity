@@ -1,0 +1,79 @@
+.icon {
+  position: relative;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 20px;
+  width: 20px;
+
+  &--favourites {
+    background-image: url(../../img/FavouritesIcon.svg);
+  }
+
+  &--cart {
+    background-image: url(../../img/CartIcon.svg);
+  }
+
+  &--favourite {
+    background-image: url(../../img/FavouritesIcon.svg);
+  }
+
+  &--favourite-active {
+    background-image: url(../../img/FavouritesActiveIcon.svg);
+  }
+
+  &--glass {
+    @include on640 {
+      background-image: url(../../img/search-glass.svg);
+    }
+  }
+
+  &--cross {
+    background-image: url(../../img/cross-no-hover.svg);
+
+    &:hover {
+      background-image: url(../../img/active-cross.svg);
+    }
+  }
+
+  &--left-arrow {
+    background-image: url(../../img/header-arrow-left.svg);
+  }
+
+  &--disabled-left-arrow {
+    background-image: url(../../img/arrow-left-disabled.svg);
+  }
+
+  &--right-arrow {
+    background-image: url(../../img/header-arrow-right.svg);
+  }
+
+  &--disabled-right-arrow {
+    background-image: url(../../img/arrow-right-disabled.svg);
+  }
+
+  &--down-arrow {
+    background-image: url(../../img/arrow-down.svg);
+  }
+
+  &--up-arrow {
+    background-image: url(../../img/select-arrow-up.svg);
+  }
+
+  &--minus {
+    background-image: url(../../img/minus.svg);
+  }
+
+  &--plus {
+    background-image: url(../../img/plus.svg);
+  }
+
+  &--burger-menu {
+    background-image: url(../../img/menu-icon.svg);
+    padding-bottom: 12px;
+  }
+
+  &--close-menu-cross {
+    background-image: url(../../img/active-cross.svg);
+  }
+}

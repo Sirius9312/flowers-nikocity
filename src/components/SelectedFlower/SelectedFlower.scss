@@ -1,0 +1,269 @@
+@import "../../styles/vars/vars.scss";
+@import "../../styles/mixins/mixins.scss";
+
+.selected-flower {
+  margin-bottom: 100px;
+
+  &__title-name {
+    margin: 0 0 30px;
+    font-weight: 500;
+    font-size: 27px;
+    letter-spacing: 0.05em;
+    color: $green;
+
+    @include on640 {
+      font-size: 35px;
+      letter-spacing: 0.08em;
+    }
+
+    @include on1280 {
+      font-size: 50px;
+      letter-spacing: 0.12em;
+    }
+  }
+
+  &__all-photos-container {
+    @include on640 {
+      grid-column: 1 / 7;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      column-gap: 30px;
+    }
+
+    @include on1280 {
+      grid-column: 1 / 13;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 20px;
+    }
+  }
+
+  &__images-container {
+    @include on640 {
+      grid-column: 1 / 7;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      column-gap: 30px;
+    }
+
+    @include on1280 {
+      grid-column: 1 / 8;
+      grid-template-columns: repeat(7, 1fr);
+      column-gap: 20px;
+    }
+  }
+
+  &__mobile-carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 25px;
+
+    @include on640 {
+      display: none;
+    }
+  }
+
+  &__carousel-buttons {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    background-color: #fff;
+  }
+
+  &__carousel-list {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    height: 280px;
+    overflow: hidden;
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    margin-right: 16px;
+  }
+
+  &__carousel-image {
+    width: 250px;
+    height: 280px;
+    object-fit: contain;
+  }
+
+  &__small-images-container {
+    display: none;
+
+    @include on640 {
+      display: block;
+      grid-column: 1 / 2;
+    }
+  }
+
+  &__big-image-container {
+    display: none;
+
+    @include on640 {
+      display: block;
+      grid-column: 2 / 6;
+      margin-bottom: 30px;
+    }
+
+    @include on1280 {
+      margin: 0;
+      grid-column: 2 / 7;
+    }
+  }
+
+  &__big-image {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  &__small-image-button {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &--active {
+      border: 3px solid rgb(62, 103, 190);
+    }
+  }
+
+  &__small-image {
+    width: 100%;
+  }
+
+  &__info-container {
+    @include on640 {
+      grid-column: 2 / 6;
+    }
+
+    @include on1280 {
+      grid-column: 8 / 13;
+    }
+  }
+
+  &__colors-title {
+    margin: 0 0 10px;
+    font-size: 15px;
+    color: $green;
+  }
+
+  &__colors-container {
+    display: flex;
+    column-gap: 20px;
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+    border-bottom: 1px solid $black;
+  }
+
+  &__color-item {
+    list-style: none;
+  }
+
+  &__color-link {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #e4d8d8;
+
+    &--active {
+     border: 3px solid $black;
+    }
+  }
+
+  &__color {
+    border: 1px solid $white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__more-info-container {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    &--last {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__more-info-title {
+    margin: 0;
+    color: $gray333;
+    font-size: 12px;
+
+    @include on640 {
+      font-size: 15px;
+    }
+  }
+
+  &__more-info-text {
+    margin: 0;
+    font-size: 14px;
+    color: $green;
+
+    &--not {
+      color: $orange;
+    }
+
+    @include on640 {
+      font-size: 17px;
+    }
+  }
+
+  &__buttons-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+  }
+
+  &__add-to-cart {
+    width: 300px;
+    box-sizing: border-box;
+    font-weight: 600;
+    line-height: 80px;
+    background-color: $darkgreen;
+    color: $white;
+    font-size: 20px;
+    cursor: pointer;
+
+    &--added {
+      border: 1px solid $green;
+      color: $green;
+      background-color: $white;
+      cursor: auto;
+    }
+
+    &--disable {
+      cursor: auto;
+      border: 1px solid $orange;
+      color: $orange;
+      background-color: $white;
+    }
+  }
+
+  &__button-like {
+    cursor: pointer;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    border: 1px solid $gray333;
+    box-sizing: border-box;
+  }
+}

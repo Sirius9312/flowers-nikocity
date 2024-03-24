@@ -1,0 +1,23 @@
+@mixin lessOn320 {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin on640 {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin on1000 {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin on1280 {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
