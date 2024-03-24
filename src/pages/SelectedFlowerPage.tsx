@@ -15,15 +15,10 @@ export const SelectedFlowerPage = () => {
     if (flowerId) {
       setError('');
       setLoading(true);
-      
-      /*getFlowerByIdFlower(flowerId)
-        .then(setSelectFlower)
-        .catch(() => setError('Помилка завантаження. Мабуть відсутній інтернет'))
-        .finally(() => setLoading(false));*/
 
       $.ajax({
         type: "POST",
-        url: "http://flowers-nikocity.ho.ua/api/flowers/flower.php",
+        url: "https://www.flowers-nikocity.ho.ua/api/flowers/flower.php",
         data: {flowerId: flowerId},
         success: function (data){
           setSelectFlower(JSON.parse(data))
