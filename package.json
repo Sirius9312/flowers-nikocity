@@ -2,6 +2,7 @@
   "name": "react-app-ts",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://Sirius9312.github.io/flowers-nikocity",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",
     "@reduxjs/toolkit": "^1.9.7",
@@ -29,6 +30,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -55,6 +58,7 @@
   "devDependencies": {
     "@types/jquery": "^3.5.29",
     "@types/lodash": "^4.14.199",
+    "gh-pages": "^6.1.1",
     "redux-devtools-extension": "^2.13.9"
   }
 }
