@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/flowers-nikocity/static/css/main.aca17e72.css",
-    "main.js": "/flowers-nikocity/static/js/main.414a9961.js",
+    "main.js": "/flowers-nikocity/static/js/main.d19ce190.js",
     "static/media/fa-solid-900.ttf": "/flowers-nikocity/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
     "static/media/fa-brands-400.ttf": "/flowers-nikocity/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
     "static/media/fa-solid-900.woff2": "/flowers-nikocity/static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
@@ -23,14 +23,14 @@
     "static/media/arrow-down.svg": "/flowers-nikocity/static/media/arrow-down.6a1c94bb9d6a68d1a098.svg",
     "static/media/header-arrow-left.svg": "/flowers-nikocity/static/media/header-arrow-left.7e79118d62a86cb16ed5.svg",
     "static/media/select-arrow-up.svg": "/flowers-nikocity/static/media/select-arrow-up.bca5376b1db38a7323e9.svg",
-    "static/media/minus.svg": "/flowers-nikocity/static/media/minus.bdf110d3a1bd224c8a82.svg",
     "index.html": "/flowers-nikocity/index.html",
+    "static/media/minus.svg": "/flowers-nikocity/static/media/minus.bdf110d3a1bd224c8a82.svg",
     "static/media/menu-icon.svg": "/flowers-nikocity/static/media/menu-icon.c9917370f41163fe036b.svg",
     "main.aca17e72.css.map": "/flowers-nikocity/static/css/main.aca17e72.css.map",
-    "main.414a9961.js.map": "/flowers-nikocity/static/js/main.414a9961.js.map"
+    "main.d19ce190.js.map": "/flowers-nikocity/static/js/main.d19ce190.js.map"
   },
   "entrypoints": [
     "static/css/main.aca17e72.css",
-    "static/js/main.414a9961.js"
+    "static/js/main.d19ce190.js"
   ]
 }
