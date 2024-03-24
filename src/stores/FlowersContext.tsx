@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-//import flowers from '../api/flowers.json';
 import { Flower } from "../type/Flower";
-//import { getFlowers } from "../connect/api";
 import { Favourite } from "../type/Favourite";
 import { CartType } from "../type/Cart";
 import { useLocaleStorage } from "../useLocaleStorage/useLocaleStorage";
@@ -92,7 +90,7 @@ export const FlowersProvider: React.FC<Props> = ({ children }) => {
     setNotProductMessage('');
     setLoader(true);
 
-    $.get("http://www.flowers-nikocity.ho.ua/api/flowers.php")
+    $.get("https://www.flowers-nikocity.ho.ua/api/flowers.php")
       .then((resp) => {
         const parsingFlowers: Flower[] = JSON.parse(resp);
         const chrysantemsList = parsingFlowers.filter(flower => flower.category === 'Голова');
@@ -113,7 +111,7 @@ export const FlowersProvider: React.FC<Props> = ({ children }) => {
     setNotProductMessage('');
     setLoader(true);
 
-    $.get("http://www.flowers-nikocity.ho.ua/api/flowers.php")
+    $.get("https://www.flowers-nikocity.ho.ua/api/flowers.php")
       .then((resp) => {
         const parsingFlowers: Flower[] = JSON.parse(resp);
         const chrysantemsList = parsingFlowers.filter(flower => flower.flower === 'Хризантема' && flower.category === 'Дрібноквітка');
@@ -134,7 +132,7 @@ export const FlowersProvider: React.FC<Props> = ({ children }) => {
     setNotProductMessage('');
     setLoader(true);
 
-    $.get("http://www.flowers-nikocity.ho.ua/api/flowers.php")
+    $.get("https://www.flowers-nikocity.ho.ua/api/flowers.php")
       .then((resp) => {
         const parsingFlowers: Flower[] = JSON.parse(resp);
         const chrysantemsList = parsingFlowers.filter(flower => flower.category === 'Мультифлора');
@@ -155,7 +153,7 @@ export const FlowersProvider: React.FC<Props> = ({ children }) => {
     setNotProductMessage('');
     setLoader(true);
 
-    $.get("http://www.flowers-nikocity.ho.ua/api/flowers.php")
+    $.get("https://www.flowers-nikocity.ho.ua/api/flowers.php")
       .then((resp) => {
         const parsingFlowers: Flower[] = JSON.parse(resp);
         const alstromeriaList = parsingFlowers.filter(flower => flower.flower === 'Альстромерія');
@@ -209,7 +207,7 @@ export const FlowersProvider: React.FC<Props> = ({ children }) => {
 
     $.ajax({
       type: "POST",
-      url: "http://www.flowers-nikocity.ho.ua",
+      url: "https://www.flowers-nikocity.ho.ua",
       data: d,
       success: function (data){
         alert(data);
